@@ -13,9 +13,7 @@ public interface UserService {
 
     User show(int id);
 
-    @Transactional
     void delete(User user);
 
-    @Transactional
     void update(User user, int id);
 }

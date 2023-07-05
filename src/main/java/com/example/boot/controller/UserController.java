@@ -12,11 +12,9 @@ import org.springframework.web.bind.annotation.*;
 
 @Controller
 public class UserController {
-    private UserDao userDao;
     private UserService userService;
 
     private UserController(UserDao userDao, UserService userService) {
-        this.userDao = userDao;
         this.userService = userService;
     }
 
